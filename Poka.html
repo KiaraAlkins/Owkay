@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+*<body>
+    
+
+<script>
+
+
+
+function pular() {
+
+    document.write("<br>")
+}
+
+function mostra(frase) {
+
+    document.write(frase)
+}
+
+var balasso = Math.round(Math.random() * 10)
+var atirar = parseInt(prompt("Escolha um número entre 1 a 6: "))
+
+if(atirar == balasso) {
+    mostra("WASTED")
+} else {
+    mostra("Quase vira estampa de camisa hein!? a bala está no buraco " + balasso)
+}
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
