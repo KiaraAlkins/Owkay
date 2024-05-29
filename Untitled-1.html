@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pular(){
+
+    document.write("<br>")
+
+}
+
+function mostra(frase) {
+
+    document.write(frase)
+    document.write("<br>")
+
+}
+
+function calculationImc(altura, peso) {
+
+    var resIMC = peso / (altura * altura)
+    return resIMC
+
+}
+
+var nome = prompt("insira aqui o seu nome: ")
+var infoHeight = prompt("Informe sua altura")
+var infoWeight = prompt("Informe seu peso")
+
+var imc = calculationImc(infoHeight, infoWeight)
+
+mostra("O imc de " + nome + " é " + imc)
+
+if (imc < 18.5) {
+
+    mostra("Você está abaixo do recomendado, saia do EdTWT")
+
+}
+
+if (imc > 35) {
+    mostra("Você está acima do recomendado, dê unfollow na Thaís Carla")
+}
+
+if(imc >= 18.5) {
+    if (imc <= 35) {
+        mostra ("Seu peso está ótimo mas ela nunca vai te amar, descanse campeão")
+    }
+}
+
+
+    </script>
+</body>
+</html>
